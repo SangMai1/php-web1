@@ -3,23 +3,23 @@
 
   <div class="form-group">
     <label>User Name</label>
-    <input type="text" name="username" value="<?= $result[0]["username"] ?? "" ?>">
+    <input type="text" class="form-control" name="username" value="<?= $result[0]["username"] ?? "" ?>">
   </div>
   <div class="form-group">
     <label>Full Name</label>
-    <input type="text" name="fullname" value="<?= $result[0]["fullname"] ?? "" ?>">
+    <input type="text" class="form-control" name="fullname" value="<?= $result[0]["fullname"] ?? "" ?>">
   </div>
   <div class="form-group">
     <label>Email</label>
-    <input type="email" name="maiaddres" value="<?= $result[0]["maiaddres"] ?? "" ?>">
+    <input type="email" class="form-control" name="maiaddres" value="<?= $result[0]["maiaddres"] ?? "" ?>">
   </div>
   <div class="form-group">
     <label>Phone</label>
-    <input type="pass" name="password" value="<?= $result[0]["password"] ?? "" ?>">
+    <input type="pass" class="form-control" name="password" value="<?= $result[0]["password"] ?? "" ?>">
   </div>
   <div class="form-group">
     <label>Date of birth</label>
-    <input type="date" name="dateofbirth" value="<?= $result[0]["dateofbirth"] ?? "" ?>">
+    <input type="date" class="form-control" name="dateofbirth" value="<?= $result[0]["dateofbirth"] ?? "" ?>">
   </div>
     <div class="form-group">
     <label class="form-label">Avatar</label>

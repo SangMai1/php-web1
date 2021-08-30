@@ -1,5 +1,5 @@
 <?php 
-    // session_start();
+    session_start();
     //phân tích uri thành controller và action
     $uris = explode("/",$_SERVER["REQUEST_URI"]);
     $controller =$uris[1]??"";
@@ -29,6 +29,12 @@
                 ],
                 "thuchienluu"=>[
                     "name"=>"save"
+                ],
+                "thuchiensearch"=>[
+                    "name"=>"thuchienSearch"
+                ],
+                "search"=>[
+                    "name"=>"successSearch"
                 ]
             ]
         ],
@@ -39,6 +45,18 @@
                 "xoa"=>[
                     "name"=>"delete"
                 ],
+                "hienthidangnhap"=>[
+                    "name"=>"showLogin"
+                ],
+                "thuchiendangnhap"=>[
+                    "name"=>"doLogin"
+                ],
+                "dangnhapthanhcong"=>[
+                    "name"=>"successLogin"
+                ],
+                "dangxuat"=>[
+                    "name"=>"logout"
+                ],
                 "danhsach"=>[
                     "name"=>"list"
                 ],
@@ -47,6 +65,18 @@
                 ],
                 "thuchienluu"=>[
                     "name"=>"save"
+                ],
+                "mail"=>[
+                    "name"=>"mail"
+                ],
+                "sendmail"=>[
+                    "name"=>"sendMail"
+                ],
+                "sendmailthanhcong"=>[
+                    "name"=>"sendMailSuccess"
+                ],
+                "sendmailthatbai"=>[
+                    "name"=>"sendMailFalse"
                 ]
             ]
         ]
@@ -70,6 +100,7 @@
         . PATH_SEPARATOR . "D:/Nitro-Tech-Asia/web-php-3/view"
         . PATH_SEPARATOR . "D:/Nitro-Tech-Asia/web-php-3/model"
         . PATH_SEPARATOR . "D:/Nitro-Tech-Asia/web-php-3/util"
+        . PATH_SEPARATOR . "D:/Nitro-Tech-Asia/web-php-3/PHPMailer"
     );
 
     //nhúng controller
